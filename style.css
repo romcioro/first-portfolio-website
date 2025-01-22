@@ -7,10 +7,8 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
-    text-align: center;
-    padding: 1rem 0;
 }
 
 h1, h2 {
