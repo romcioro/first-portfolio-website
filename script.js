@@ -13,8 +13,8 @@ skills.forEach(skill => {
 
 // here I define the the themeToggle so we can use it
 const themeToggle = document.getElementById("theme-toggle");
-// Check saved theme on page load
 
+// Check saved theme on page load
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
