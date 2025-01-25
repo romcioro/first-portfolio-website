@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #9f94aa, #2575fc);
     color: white;
 }
 
@@ -30,10 +30,80 @@ footer {
 }
 
 #skills h2 {
-    color: #333;
+    color: #93c241;
 }
 
 #skills ul {
     list-style-type: square;
     padding-left: 20px;
+}
+
+/* for the Project Section */
+#projects {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+#projects h2 {
+    color: #333;
+}
+
+#projects .project {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#projects .project:hover {
+    background-color: #eef;
+}
+
+
+/*the below is for the dark toggle */
+body.dark-mode {
+    background-color: #140e0e;
+    color: #fff;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #866262;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a11cb;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+/* for the Skills section */
+body.dark-mode #skills {
+    background-color: #444; /* Dark background for the skills section */
+    color: #fff; /* White text color */
+    border: 1px solid #666; /* Add a subtle border */
+}
+
+body.dark-mode #skills h2 {
+    color: #fff; /* Ensure the heading text is white */
+}
+
+body.dark-mode #skills ul li {
+    color: #ddd; /* Slightly lighter text for list items */
+}
+
+
+body {
+    transition: background-color 0.5s, color 0.5s;
 }
