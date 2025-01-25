@@ -53,3 +53,38 @@ projects.forEach(project => {
     projectsList.appendChild(projectDiv);
 });
 
+// Target the form
+const contactForm = document.getElementById("contact-form");
+
+// Add an event listener for form submission
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent the form from reloading the page
+
+    // Collect form data
+    const formData = new FormData(contactForm); // Extract form data
+    const name = formData.get("name"); // Get the 'name' input value
+    const email = formData.get("email"); // Get the 'email' input value
+    const message = formData.get("message"); // Get the 'message' textarea value
+
+    // Log the form data to the browser console
+    console.log(`Name: ${name}`);
+    console.log(`Email: ${email}`);
+    console.log(`Message: ${message}`);
+
+    // Optional: Reset the form fields
+    contactForm.reset();
+
+    // Notify the user
+    alert("Your message has been sent! (Logged to the console)");
+});
+
+
+// Click Counter Logic
+let clickCount = 0;
+const counterButton = document.getElementById("counter-button");
+const clickCountDisplay = document.getElementById("click-count");
+
+counterButton.addEventListener("click", () => {
+    clickCount++;
+    clickCountDisplay.textContent = `You have clicked the button ${clickCount} times.`;
+});

@@ -107,3 +107,69 @@ body.dark-mode #skills ul li {
 body {
     transition: background-color 0.5s, color 0.5s;
 }
+
+/* For the COntact form */
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#contact h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact input, #contact textarea, #contact button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    min-height: 100px;
+}
+
+#contact button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: #2575fc;
+}
+
+
+#click-counter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#counter-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#counter-button:hover {
+    background-color: #2575fc;
+}
