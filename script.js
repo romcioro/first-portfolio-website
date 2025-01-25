@@ -34,24 +34,30 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
-// for the Project Section
+// Array of projects
 const projects = [
-    { title: "To-Do App", description: "A simple app to manage tasks." },
-    { title: "Portfolio Website", description: "The website you're viewing now!" },
-    { title: "Calculator", description: "A basic calculator built with JavaScript." },
+    { title: "To-Do App", link: "./to-do-app/index.html", description: "A simple app to manage tasks." },
+    { title: "Portfolio Website", link: "#", description: "The website you're viewing now!" },
+    { title: "Calculator", link: "#", description: "A basic calculator built with JavaScript." },
 ];
 
+// Target the projects list container
 const projectsList = document.getElementById("projects-list");
 
-projects.forEach(project => {
+// Dynamically create and populate project items
+projects.forEach((project) => {
     const projectDiv = document.createElement("div");
     projectDiv.classList.add("project");
+
     projectDiv.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
+        <a href="${project.link}" target="_blank">View Project</a>
     `;
+
     projectsList.appendChild(projectDiv);
 });
+
 
 // Target the form
 const contactForm = document.getElementById("contact-form");
